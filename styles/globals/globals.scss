@@ -1,0 +1,19 @@
+html {
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

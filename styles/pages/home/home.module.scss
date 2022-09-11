@@ -1,0 +1,208 @@
+@use "../../shared/fonts";
+@use "../../shared/colors";
+@import "../../shared/_containers.scss";
+
+@keyframes buttonBgAnimation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.bgVideoContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: colors.$black;
+}
+
+.headerContainer {
+    @include dFlex(space-between, center);
+    height: 20vh;
+    padding: 0 40px;
+    img {
+        cursor: pointer;
+    }
+}
+
+.bgVideo {
+    filter: blur(7px);
+    opacity: 0.85;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.selectLanguage {
+    cursor: pointer;
+    padding: 9px 35px 9px 15px;
+    max-width: 100%;
+    border: 2px solid colors.$white;
+    color: colors.$white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: colors.$red-light;
+
+    @media (max-width: 590px) {
+        display: none;
+    }
+}
+
+.headerDivisor {
+    position: absolute;
+    width: "100%";
+    left: 50%;
+    top: 0;
+    background: colors.$yellow-dark;
+    width: 1px;
+    height: calc(20vh - 20px);
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.divisorDecorator {
+    @include dFlex(center, center);
+    position: absolute;
+    bottom: -25px;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    border: 1px solid colors.$yellow-dark;
+    &:before {
+        content: "";
+        width: 50%;
+        height: 50%;
+        background-color: colors.$yellow-light;
+    }
+}
+
+.mainHomeTitle {
+    font-family: fonts.$BeaufortforLOL;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 2.5vw 0;
+    font-size: 8.4rem;
+    color: colors.$white;
+    text-align: center;
+
+    @media (max-width: 765px) {
+        padding: 5vw 0;
+    }
+}
+
+.dividerContainer {
+    @include dFlex(center, initial);
+    max-width: 100vw;
+    img {
+        max-width: 100%;
+    }
+}
+
+.callToAction {
+    @include dFlex(center, center);
+    padding: 20px 20px;
+    position: relative;
+    button {
+        background-blend-mode: difference;
+        background-color: colors.$red-light;
+        padding: 30px 35px;
+        min-width: 280px;
+        border: 2px solid colors.$white;
+        color: colors.$white;
+        font-size: 2.1rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: fonts.$BeaufortforLOL;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-image: url("/assets/images/button-bg-pattern.png");
+        background-position: 0px 0px;
+        background-size: cover;
+        animation: buttonBgAnimation 30s linear infinite alternate;
+        &:hover {
+            background-color: colors.$red-dark;
+        }
+    }
+}
+
+.ratingsLogo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: colors.$white;
+    line-height: 1.5;
+    ul {
+        margin-left: 5px;
+    }
+}
+
+.usefulLinks {
+    @include dFlex(initial, center, true);
+    a.link {
+        font-family: fonts.$BeaufortforLOL;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: colors.$white;
+        margin-bottom: 20px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid colors.$yellow-dark;
+        transition: all 1s ease-in-out;
+        &:hover {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.footerContainer {
+    @include dFlex(space-between, center, false);
+    padding: 0 40px;
+
+    @media (max-width: 480px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.selectLegal {
+    cursor: pointer;
+    padding: 9px 35px 9px 15px;
+    max-width: 100%;
+    border: 2px solid colors.$white;
+    color: colors.$white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    background-color: colors.$red-light;
+
+    @media (max-width: 480px) {
+        margin-bottom: 20px;
+        flex: 2;
+        text-align: center;
+    }
+}
+
+.copyright {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin: 5px auto;
+    color: colors.$yellow-light;
+    a {
+        color: colors.$yellow-light;
+        text-decoration: underline;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+}

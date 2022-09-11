@@ -1,0 +1,18 @@
+export default {
+    title: "Accélérateur de science",
+    ctaButton: "télécharger pour windows",
+    ctaMacButton: "TÉLÉCHARGER L'INSTALLATEUR POUR MAC",
+    ctaCreateAccount: "CRÉER UN COMPTE",
+    ratingsText1: "La violence",
+    ratingsText2: `Contenu sexuel`,
+    ratingsText3: `langage inapproprié`,
+    ratingsText4: `Shopping en ligne`,
+    ratingsText5: "Interaction de l'utilisateur",
+    copyrightText1: "Ce site est protégé par hCaptcha; ton",
+    copyrightText2: "Avis de confidentialité",
+    copyrightText3: "et le vôtre",
+    copyrightText4: "Conditions de service",
+    copyrightText5: "sont applicables.",
+    copyrightText6: "© 2022 Super Giant Games, inc. Tous les droits sont réservés",
+    legalSelectText: "JURIDIQUE",
+};

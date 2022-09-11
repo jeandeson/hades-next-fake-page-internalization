@@ -1,0 +1,18 @@
+export default {
+    title: "JOGAR HADES",
+    ctaButton: "Baixar para windows",
+    ctaMacButton: "BAIXAR INSTALADADOR PARA MAC",
+    ctaCreateAccount: "CRIAR UMA CONTA",
+    ratingsText1: "Violência",
+    ratingsText2: `Conteúdo Sexual'`,
+    ratingsText3: `Linguagem Imprópria`,
+    ratingsText4: `Compras On-line`,
+    ratingsText5: "Interação de Usuários",
+    copyrightText1: "Este site é protegido por hCaptcha; sua",
+    copyrightText2: "Aviso de Privacidade",
+    copyrightText3: "e seus",
+    copyrightText4: "Termos de Serviço",
+    copyrightText5: "são aplicáveis.",
+    copyrightText6: "© 2022 Super Giant Games, inc. Todos os direitos reservados",
+    legalSelectText: "JURÍDICO",
+};

@@ -1,0 +1,18 @@
+export default {
+    title: "Accelerating science",
+    ctaButton: "Download for windows",
+    ctaMacButton: "DOWNLOAD INSTALLER FOR MAC",
+    ctaCreateAccount: "CREATE AN ACCOUNT",
+    ratingsText1: "Violence",
+    ratingsText2: `Sexual Content'`,
+    ratingsText3: `Inappropriate Language`,
+    ratingsText4: `Online shopping`,
+    ratingsText5: "User Interaction",
+    copyrightText1: "This site is protected by hCaptcha; your",
+    copyrightText2: "Privacy Notice",
+    copyrightText3: "and yours",
+    copyrightText4: "Service Terms",
+    copyrightText5: "are applicable.",
+    copyrightText6: "© 2022 Super Giant Games, inc. All rights reserved",
+    legalSelectText: "LEGAL",
+};
